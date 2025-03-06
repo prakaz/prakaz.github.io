@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-Class-Subject Links</title>
+    <style>
+        #grades {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: 'Arial', sans-serif;
+        }
+        #grades li {
+            margin: 10px 0;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        #grades li:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .grade-link, .class-link {
+            display: block;
+            padding: 12px 16px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .grade-link:hover, .class-link:hover {
+            background: #f1f3f4;
+            color: #1557b0;
+        }
+        .classes, .subjects {
+            list-style-type: none;
+            padding-left: 20px;
+            display: none;
+            margin: 0;
+        }
+        .classes li, .subjects li {
+            background: #fafafa;
+            border-radius: 6px;
+            margin: 8px 0;
+        }
+        .subject-link {
+            display: block;
+            padding: 10px 14px;
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+        .subject-link:hover {
+            background: #e9ecef;
+            color: #084298;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="link-structure"></div>
+
+    <script>
+        function createLinkStructure(data) {
+            const groupedData = {};
+            data.forEach(item => {
+                const grade = item.grade;
+                const cls = item["class"];
+                const subject = item.subject;
+                const formUrl = item.form_url;
+                if (!groupedData[grade]) groupedData[grade] = {};
+                if (!groupedData[grade][cls]) groupedData[grade][cls] = [];
+                groupedData[grade][cls].push({ subject, formUrl });
+            });
+
+            let html = '<ul id="grades">';
+            for (const grade in groupedData) {
+                html += `
+                    <li>
+                        <a class="grade-link">${grade}</a>
+                        <ul class="classes">`;
+                for (const cls in groupedData[grade]) {
+                    const classDisplay = `${grade}-${cls}`; // Combine grade and class (e.g., G8-RED)
+                    html += `
+                        <li>
+                            <a class="class-link">${classDisplay}</a>
+                            <ul class="subjects">`;
+                    groupedData[grade][cls].forEach(subject => {
+                        html += `
+                            <li>
+                                <a href="${subject.formUrl}" target="_blank" class="subject-link">${subject.subject}</a>
+                            </li>`;
+                    });
+                    html += `</ul></li>`;
+                }
+                html += `</ul></li>`;
+            }
+            html += '</ul>';
+
+            const container = document.getElementById('link-structure');
+            container.innerHTML = html;
+
+            // Add click event listener with accordion behavior
+            container.addEventListener('click', function(event) {
+                const target = event.target;
+
+                // Only handle grade-link or class-link clicks
+                if (target.classList.contains('grade-link') || target.classList.contains('class-link')) {
+                    event.preventDefault();
+                    const sublist = target.nextElementSibling;
+                    const isExpanding = sublist.style.display !== 'block';
+
+                    // Determine the level (grade or class) and collapse others at the same level
+                    const parentList = target.closest('ul');
+                    const siblings = parentList.querySelectorAll('.' + target.className); // Same class (grade-link or class-link)
+
+                    // Collapse all siblings
+                    siblings.forEach(sibling => {
+                        const siblingSublist = sibling.nextElementSibling;
+                        if (siblingSublist && sibling !== target) {
+                            siblingSublist.style.display = 'none';
+                        }
+                    });
+
+                    // Toggle the clicked item's sublist
+                    sublist.style.display = isExpanding ? 'block' : 'none';
+                }
+                // Subject links are not affected and will open their href naturally
+            });
+        }
+
+        function loadJsonFromWeb(url) {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => createLinkStructure(data))
+                .catch(error => {
+                    console.error('Error fetching JSON:', error);
+                    document.getElementById('link-structure').innerHTML = 
+                        '<p style="color: red;">Error loading data. Please try again later.</p>';
+                });
+        }
+
+        // Load JSON from your GitHub URL
+        loadJsonFromWeb('https://prakaz.github.io/forms.json');
+    </script>
 </body>
 </html>
