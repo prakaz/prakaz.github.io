@@ -96,8 +96,20 @@
                     const classDisplay = `${grade}-${cls}`; // Combine grade and class (e.g., G8-RED)
                      const classId = classDisplay.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
 
-                     // Sort subjects alphabetically before generating the HTML for them
-                     groupedData[grade][cls].sort((a, b) => a.subject.localeCompare(b.subject));
+                     // Sort subjects alphabetically, but keep specified subjects at the end
+                    groupedData[grade][cls].sort((a, b) => {
+                        const specialSubjects = ["Absences", "Lateness", "Form Teacher Remarks"];
+                        const aIsSpecial = specialSubjects.includes(a.subject);
+                        const bIsSpecial = specialSubjects.includes(b.subject);
+
+                        if (aIsSpecial && !bIsSpecial) {
+                            return 1; // a goes after b
+                        } else if (!aIsSpecial && bIsSpecial) {
+                            return -1; // a goes before b
+                        } else {
+                            return a.subject.localeCompare(b.subject); // Standard alphabetical sort
+                        }
+                    });
 
 
                     html += `
