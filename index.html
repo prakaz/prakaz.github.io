@@ -10,6 +10,7 @@
             --hover-background: #f1f3f4;
             --subject-color: #0d6efd;
             --subject-hover-color: #084298;
+            --marksheet-color: #666; /* Subtle color for marksheet link */
         }
 
         #grades {
@@ -19,53 +20,142 @@
             max-width: 600px;
             margin: 20px auto;
             font-family: 'Arial', sans-serif;
+            position: relative;
         }
+
         #grades li {
             margin: 10px 0;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            position: relative;
         }
-        #grades li:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
+
         .grade-link, .class-link {
             display: block;
-            padding: 12px 16px;
+            padding: 12px 16px 12px 30px;
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 600;
             cursor: pointer;
-            border-radius: 8px;
+            position: relative;
+            z-index: 1;
         }
+
         .grade-link:hover, .class-link:hover {
             background: var(--hover-background);
             color: #1557b0;
         }
+
+        .marksheet-link {
+            color: var(--marksheet-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9em; /* Slightly smaller for emphasis */
+        }
+
+        .marksheet-link:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
         .classes, .subjects {
             list-style-type: none;
             padding-left: 20px;
             display: none;
             margin: 0;
+            position: relative;
         }
+
+        .subjects li {
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .subject-link {
+            display: block;
+            padding: 10px 14px 10px 20px;
+            color: var(--subject-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subject-link:hover {
+            background: #e9ecef;
+            color: var(--subject-hover-color);
+        }
+
+        /* Tree-like branch lines */
+        #grades > li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 1px;
+            height: 100%;
+            background: #ccc;
+        }
+
+        .classes > li::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 1px;
+            height: calc(100% + 10px);
+            background: #ccc;
+        }
+
+        .subjects > li::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 1px;
+            height: calc(100% + 10px);
+            background: #ccc;
+        }
+
+        .grade-link::before, .class-link::before, .subject-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 15px;
+            height: 1px;
+            background: #ccc;
+            transform: translateY(-50%);
+        }
+
+        #grades > li:last-child::before,
+        .classes > li:last-child::before,
+        .subjects > li:last-child::before {
+            height: 50%;
+        }
+
+        /* Background and hover effects */
+        #grades li {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #grades li:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
         .classes li, .subjects li {
             background: #fafafa;
             border-radius: 6px;
             margin: 8px 0;
         }
-        .subject-link {
-            display: block;
-            padding: 10px 14px;
-            color: var(--subject-color);
-            text-decoration: none;
-            font-weight: 500;
-            border-radius: 6px;
-            transition: background 0.2s ease;
-        }
-        .subject-link:hover {
-            background: #e9ecef;
-            color: var(--subject-hover-color);
+
+        /* Style for the grade container */
+        #grades > li > div {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px 12px 30px; /* Match grade-link padding */
         }
     </style>
 </head>
@@ -75,12 +165,17 @@
     <script>
         function createLinkStructure(data) {
             const groupedData = {};
+            const gradeMarksheets = {}; // Store marksheet URL per grade
             data.forEach(item => {
                 const grade = item.grade;
                 const cls = item["class"];
                 const subject = item.subject;
                 const formUrl = item.form_url;
-                if (!groupedData[grade]) groupedData[grade] = {};
+                const responseSheetUrl = item.response_sheet_url;
+                if (!groupedData[grade]) {
+                    groupedData[grade] = {};
+                    gradeMarksheets[grade] = responseSheetUrl; // Take first response_sheet_url for the grade
+                }
                 if (!groupedData[grade][cls]) groupedData[grade][cls] = [];
                 groupedData[grade][cls].push({ subject, formUrl });
             });
@@ -88,15 +183,19 @@
             let html = '<ul id="grades" role="tree">';
             for (const grade in groupedData) {
                 const gradeId = grade.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
+                const marksheetUrl = gradeMarksheets[grade]; // Get the marksheet URL for this grade
                 html += `
                     <li role="treeitem">
-                        <a class="grade-link" aria-expanded="false" aria-level="1" aria-controls="classes-${gradeId}">${grade}</a>
+                        <div>
+                            <a class="grade-link" aria-expanded="false" aria-level="1" aria-controls="classes-${gradeId}">${grade}</a>
+                            <span> - </span><a href="${marksheetUrl}" target="_blank" class="marksheet-link">(Marksheet)</a>
+                        </div>
                         <ul class="classes" role="group" id="classes-${gradeId}">`;
                 for (const cls in groupedData[grade]) {
                     const classDisplay = `${grade}-${cls}`; // Combine grade and class (e.g., G8-RED)
-                     const classId = classDisplay.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
+                    const classId = classDisplay.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
 
-                     // Sort subjects alphabetically, but keep specified subjects at the end
+                    // Sort subjects alphabetically, but keep specified subjects at the end
                     groupedData[grade][cls].sort((a, b) => {
                         const specialSubjects = ["Absences", "Lateness", "Form Teacher Remarks"];
                         const aIsSpecial = specialSubjects.includes(a.subject);
@@ -110,7 +209,6 @@
                             return a.subject.localeCompare(b.subject); // Standard alphabetical sort
                         }
                     });
-
 
                     html += `
                         <li role="treeitem">
@@ -138,7 +236,7 @@
                 // Only handle grade-link or class-link clicks
                 if (target.tagName === 'A' && (target.classList.contains('grade-link') || target.classList.contains('class-link'))) {
                     event.preventDefault();
-                    const sublist = target.nextElementSibling;
+                    const sublist = target.nextElementSibling.tagName === 'UL' ? target.nextElementSibling : target.parentElement.nextElementSibling; // Adjust for new div structure
                     const isExpanding = sublist.style.display !== 'block';
 
                     // Determine the level (grade or class) and collapse others at the same level
@@ -147,7 +245,7 @@
 
                     // Collapse all siblings
                     siblings.forEach(sibling => {
-                        const siblingSublist = sibling.nextElementSibling;
+                        const siblingSublist = sibling.nextElementSibling.tagName === 'UL' ? sibling.nextElementSibling : sibling.parentElement.nextElementSibling;
                         if (siblingSublist && sibling !== target) {
                             siblingSublist.style.display = 'none';
                             sibling.setAttribute('aria-expanded', 'false');
@@ -158,12 +256,12 @@
                     sublist.style.display = isExpanding ? 'block' : 'none';
                     target.setAttribute('aria-expanded', isExpanding.toString());
                 }
-                // Subject links are not affected and will open their href naturally
+                // Subject links and marksheet links are not affected and will open their href naturally
             });
         }
 
         function loadJsonFromWeb(url) {
-            document.getElementById('link-structure').innerHTML = '<p>Loading data...</p>'; //Loading indicator
+            document.getElementById('link-structure').innerHTML = '<p>Loading data...</p>'; // Loading indicator
             fetch(url)
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
