@@ -7,7 +7,7 @@
     <style>
         :root {
             --primary-color: #1a73e8;
-            --hover-background: #f1f3f4;
+            --hover-background: #b5f1ff;
             --subject-color: #0d6efd;
             --subject-hover-color: #084298;
             --marksheet-color: #1a73e8; /* Match primary color for link style */
@@ -49,6 +49,8 @@
             padding-left: 20px;
             display: none;
             margin: 0;
+            margin-right: 10px;
+            padding-bottom: 10px;
         }
         .classes li, .subjects li {
             background: #fafafa;
@@ -68,21 +70,22 @@
             background: #e9ecef;
             color: var(--subject-hover-color);
         }
-        .marksheet-link {
-            color: var(--marksheet-color);
-            text-decoration: underline; /* Underlined by default like a link */
-            font-weight: 500;
-            font-size: 0.9em; /* Slightly smaller for emphasis */
-            padding-left: 5px;
-        }
+.marksheet-link {
+    color: #1b73e8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding-left: 5px;
+}
         .marksheet-link:hover {
             color: #1557b0; /* Darker blue on hover */
+            text-decoration: underline;
         }
-        .classes > li > div {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px; /* Match class-link padding */
-        }
+.classes > li > div {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+}
     </style>
 </head>
 <body>
