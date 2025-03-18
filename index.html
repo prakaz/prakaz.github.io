@@ -151,11 +151,11 @@
             margin: 8px 0;
         }
 
-        /* Style for the grade container */
-        #grades > li > div {
+        /* Style for the class container */
+        .classes > li > div {
             display: flex;
             align-items: center;
-            padding: 12px 16px 12px 30px; /* Match grade-link padding */
+            padding: 12px 16px 12px 30px; /* Match class-link padding */
         }
     </style>
 </head>
@@ -165,35 +165,33 @@
     <script>
         function createLinkStructure(data) {
             const groupedData = {};
-            const gradeMarksheets = {}; // Store marksheet URL per grade
+            const classMarksheets = {}; // Store marksheet URL per class
             data.forEach(item => {
                 const grade = item.grade;
                 const cls = item["class"];
                 const subject = item.subject;
                 const formUrl = item.form_url;
                 const responseSheetUrl = item.response_sheet_url;
-                if (!groupedData[grade]) {
-                    groupedData[grade] = {};
-                    gradeMarksheets[grade] = responseSheetUrl; // Take first response_sheet_url for the grade
+                const classKey = `${grade}-${cls}`; // Unique key for each class
+                if (!groupedData[grade]) groupedData[grade] = {};
+                if (!groupedData[grade][cls]) {
+                    groupedData[grade][cls] = [];
+                    classMarksheets[classKey] = responseSheetUrl; // Take first response_sheet_url for the class
                 }
-                if (!groupedData[grade][cls]) groupedData[grade][cls] = [];
                 groupedData[grade][cls].push({ subject, formUrl });
             });
 
             let html = '<ul id="grades" role="tree">';
             for (const grade in groupedData) {
                 const gradeId = grade.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
-                const marksheetUrl = gradeMarksheets[grade]; // Get the marksheet URL for this grade
                 html += `
                     <li role="treeitem">
-                        <div>
-                            <a class="grade-link" aria-expanded="false" aria-level="1" aria-controls="classes-${gradeId}">${grade}</a>
-                            <span> - </span><a href="${marksheetUrl}" target="_blank" class="marksheet-link">(Marksheet)</a>
-                        </div>
+                        <a class="grade-link" aria-expanded="false" aria-level="1" aria-controls="classes-${gradeId}">${grade}</a>
                         <ul class="classes" role="group" id="classes-${gradeId}">`;
                 for (const cls in groupedData[grade]) {
                     const classDisplay = `${grade}-${cls}`; // Combine grade and class (e.g., G8-RED)
                     const classId = classDisplay.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
+                    const marksheetUrl = classMarksheets[classDisplay]; // Get the marksheet URL for this class
 
                     // Sort subjects alphabetically, but keep specified subjects at the end
                     groupedData[grade][cls].sort((a, b) => {
@@ -212,7 +210,10 @@
 
                     html += `
                         <li role="treeitem">
-                            <a class="class-link" aria-expanded="false" aria-level="2" aria-controls="subjects-${classId}">${classDisplay}</a>
+                            <div>
+                                <a class="class-link" aria-expanded="false" aria-level="2" aria-controls="subjects-${classId}">${classDisplay}</a>
+                                <span>&nbsp;</span><a href="${marksheetUrl}" target="_blank" class="marksheet-link">(Marksheet)</a>
+                            </div>
                             <ul class="subjects" role="group" id="subjects-${classId}">`;
                     groupedData[grade][cls].forEach(subject => {
                         html += `
