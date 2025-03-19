@@ -3,7 +3,9 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Arabic",
-    "teachers": "ABDOULA Nabiilah (Arabic)",
+    "teachers": [
+      "ABDOULA Nabiilah (Arabic)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdov03mo719sDk517HktqCgQ9ne8CG297o4qPv-TvAYEVfAuA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -11,7 +13,10 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Art & Design",
-    "teachers": "GAREWAN Narvesh (Art & Design),DOOKHORUN Asvind (Art & Design)",
+    "teachers": [
+      "GAREWAN Narvesh (Art & Design)",
+      "DOOKHORUN Asvind (Art & Design)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfXZVW2t7TV8OI26UkK_hccCwU4ox1qON5wIKOjlQgn2Dyw-A/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -19,7 +24,10 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Biology",
-    "teachers": "DHAWOTAL Devtee (Biology),TOTOO Rajeshwar (Biology)",
+    "teachers": [
+      "DHAWOTAL Devtee (Biology)",
+      "TOTOO Rajeshwar (Biology)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScs05hl8rydTGCNySVM6G7JAuHjyRQ9ZO9TH5yhIMBn0nvrYw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -27,7 +35,11 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Chemistry",
-    "teachers": "FAWDAR Balmik (Chemistry),THUMADOO Kishan (Chemistry),SEEBURRUN Premchand (Chemistry, Life Skills & Values)",
+    "teachers": [
+      "FAWDAR Balmik (Chemistry)",
+      "THUMADOO Kishan (Chemistry)",
+      "SEEBURRUN Premchand (Chemistry, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc8KLSokxJwSe_9cHNwmQ1ZqJBwBm56Vgi7mIJGRynqFk5WdQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -35,7 +47,11 @@
     "grade": "G7",
     "class": "RED",
     "subject": "BEE",
-    "teachers": "NAWRUTTUN Shatti Bhama (BEE, Business),KITARUTH Avinash (Business, BEE),GUNESS Harshita Devi (Business, BEE)",
+    "teachers": [
+      "NAWRUTTUN Shatti Bhama (BEE, Business)",
+      "KITARUTH Avinash (Business, BEE)",
+      "GUNESS Harshita Devi (Business, BEE)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfzS4V_cMfz5OOKwUFOPenV1eqgMBfiiaKDXO58zU_QdORoaQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -43,7 +59,14 @@
     "grade": "G7",
     "class": "RED",
     "subject": "English",
-    "teachers": "RAJCOOMAR Priscilla Kiran (English),CHOYTOO HAWOLDAR Shalini (English),SEELOCHUN Nirmala (English),RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),EDOO Nawsheen Bibi Zainab (English),RAMJHEETUN LOCKNAUTH Vidoushi (English)",
+    "teachers": [
+      "RAJCOOMAR Priscilla Kiran (English)",
+      "CHOYTOO HAWOLDAR Shalini (English)",
+      "SEELOCHUN Nirmala (English)",
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "EDOO Nawsheen Bibi Zainab (English)",
+      "RAMJHEETUN LOCKNAUTH Vidoushi (English)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScAckpzkz5R2koLIhXruiHjdryqc7obEtxGYSgRbTLCJAq1Tw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -51,7 +74,14 @@
     "grade": "G7",
     "class": "RED",
     "subject": "French",
-    "teachers": "BAJRACHARYA Prakash (French, French Literature),RAGNUTH Manisha (French, French Literature),NARISIMLU Ursheena (French, French Literature),MOOKEN Shekinah (French, French Literature),DADA Jacque Gregory Benoit (French, French Literature),LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)",
+    "teachers": [
+      "BAJRACHARYA Prakash (French, French Literature)",
+      "RAGNUTH Manisha (French, French Literature)",
+      "NARISIMLU Ursheena (French, French Literature)",
+      "MOOKEN Shekinah (French, French Literature)",
+      "DADA Jacque Gregory Benoit (French, French Literature)",
+      "LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSd8Pvy4za5tEDTigV59sk6kNulOTviYipZctmZoHwB3gFjYXQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -59,7 +89,9 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Kreol Morisien",
-    "teachers": "DOWLUT BOOLAKEE Bibi Zainab (Kreol Morisien)",
+    "teachers": [
+      "DOWLUT BOOLAKEE Bibi Zainab (Kreol Morisien)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfVIz76PEeEEUz09DggVih6C7RkjjqACbCUbm533sZSkN9QqQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -67,7 +99,10 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Hindi",
-    "teachers": "BHOLAH Chandrawtee (Hindi),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+    "teachers": [
+      "BHOLAH Chandrawtee (Hindi)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSd__UJSd0bdzSx6YgJb7RKyJDqgY1LIyswuEOhvFwhB1oCGUQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -75,7 +110,12 @@
     "grade": "G7",
     "class": "RED",
     "subject": "ICT",
-    "teachers": "BOYJONAUTH Kevin (Computer Science, ICT),BEEFNAH Anoosuya Devi (Computer Science, ICT),RAMDANY Sudesh Kumar (Computer Science, ICT),APPIAH Melvin (Computer Science, ICT)",
+    "teachers": [
+      "BOYJONAUTH Kevin (Computer Science, ICT)",
+      "BEEFNAH Anoosuya Devi (Computer Science, ICT)",
+      "RAMDANY Sudesh Kumar (Computer Science, ICT)",
+      "APPIAH Melvin (Computer Science, ICT)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdVE5GyBOO_WdO3NjxjYqrQJ-Y1CMDbwPHTQmRGxc9nOrF9AA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -83,7 +123,15 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Life Skills & Values",
-    "teachers": "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),SEEBURRUN Premchand (Chemistry, Life Skills & Values),RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts),LOWTUN Muzayyan (Urdu, Life Skills & Values),BUNDHOO Amrish (Physical Education, Life Skills & Values),LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+    "teachers": [
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "SEEBURRUN Premchand (Chemistry, Life Skills & Values)",
+      "RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+      "LOWTUN Muzayyan (Urdu, Life Skills & Values)",
+      "BUNDHOO Amrish (Physical Education, Life Skills & Values)",
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSffx3Px_fuMTk7qXAPFWRyEH6UPaRvS-TB5_3dM3sD7E-tbMQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -91,7 +139,15 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Mathematics",
-    "teachers": "GOWREESUNKUR Manisha (Mathematics, Additional Maths),DHUNPUTH Teeroshni (Mathematics, Additional Maths),RAMKISSOON Ram Sharmah (Mathematics, Additional Maths),BEEHARRY Ranjeeta (Mathematics, Additional Maths),BEEHARRY Reunurani (Mathematics, Additional Maths),POORUN Varuna Devi (Mathematics, Additional Maths),BEERACHEE Ravindranath (Mathematics, Additional Maths)",
+    "teachers": [
+      "GOWREESUNKUR Manisha (Mathematics, Additional Maths)",
+      "DHUNPUTH Teeroshni (Mathematics, Additional Maths)",
+      "RAMKISSOON Ram Sharmah (Mathematics, Additional Maths)",
+      "BEEHARRY Ranjeeta (Mathematics, Additional Maths)",
+      "BEEHARRY Reunurani (Mathematics, Additional Maths)",
+      "POORUN Varuna Devi (Mathematics, Additional Maths)",
+      "BEERACHEE Ravindranath (Mathematics, Additional Maths)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc91lsH4iDrRmXgdbhziUNDlHpri1bH8OeHceyvFrKGaAURdg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -99,23 +155,23 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Physical Education",
-    "teachers": "BHUGOWANDEEN Satchindramohun (Physical Education),OOGARAH Shravan (Physical Education),BUNDHOO Amrish (Physical Education, Life Skills & Values)",
+    "teachers": [
+      "BHUGOWANDEEN Satchindramohun (Physical Education)",
+      "OOGARAH Shravan (Physical Education)",
+      "BUNDHOO Amrish (Physical Education, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdHqDasBA1LKp1ted8AyxH7IbMp3yvSrVCW2ai3Gv0y3nP1fA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
   {
     "grade": "G7",
     "class": "RED",
-    "subject": "Science",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "RED",
     "subject": "Social & Modern Studies",
-    "teachers": "JAYNUT Ouma Devi (Sociology, Social & Modern Studies),KORIMBOCCUS Neha (Sociology, Social & Modern Studies),RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)",
+    "teachers": [
+      "JAYNUT Ouma Devi (Sociology, Social & Modern Studies)",
+      "KORIMBOCCUS Neha (Sociology, Social & Modern Studies)",
+      "RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSeN-3ULGfsYpcXPfFTRqMF-iIsMK64xuwzc02ArfWPnag9v4A/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -123,23 +179,26 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Tamil",
-    "teachers": "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts),JAGGANNA Varuna (Tamil, Performing Arts)",
+    "teachers": [
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+      "JAGGANNA Varuna (Tamil, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScr__q_dETW3BO8gjh_q7Y7c9aeQgskbMyZJTJmdCCcZSlOsg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
   {
     "grade": "G7",
     "class": "RED",
-    "subject": "Technology Studies",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "RED",
     "subject": "Performing Arts",
-    "teachers": "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts),BABOO Kumar Rajiv (Performing Arts),GOKHOOLAH Kusum Sarovar (Performing Arts),LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts),JAGGANNA Varuna (Tamil, Performing Arts)",
+    "teachers": [
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+      "BABOO Kumar Rajiv (Performing Arts)",
+      "GOKHOOLAH Kusum Sarovar (Performing Arts)",
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+      "JAGGANNA Varuna (Tamil, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc4VjB4G9YpEO0nBazAKVQ04UC7_Xx8E6hpPiTNx7weaNvhTQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -147,39 +206,21 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Urdu",
-    "teachers": "BEEBEEJAUN Mohammad Zaheed (Urdu),LOWTUN Muzayyan (Urdu, Life Skills & Values)",
+    "teachers": [
+      "BEEBEEJAUN Mohammad Zaheed (Urdu)",
+      "LOWTUN Muzayyan (Urdu, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdGG0GwJ0iOQJdEnktthhTZ8wETacaeOYepBTacsXZ_OWgYvQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
   {
     "grade": "G7",
     "class": "RED",
-    "subject": "Telugu",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "RED",
-    "subject": "Absences",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "RED",
-    "subject": "Lateness",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "RED",
     "subject": "Form Master Remarks",
-    "teachers": "DADA Jacque Gregory Benoit, DHUNPUTH Teeroshni",
+    "teachers": [
+      "DADA Jacque Gregory Benoit",
+      "DHUNPUTH Teeroshni"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSefhFhYpWVz_aWwGr-OFWZ5I5LRP4jpnrk3TEdw2-ZPEmVFIg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -187,7 +228,10 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Food Studies",
-    "teachers": "BABOOA Lubdha Devi (Fashion & Textiles, Food & Nutrition, Food Studies),MAMEDY Geraldine (Fashion & Textiles, Food & Nutrition, Food Studies)",
+    "teachers": [
+      "BABOOA Lubdha Devi (Fashion & Textiles, Food & Nutrition, Food Studies)",
+      "MAMEDY Geraldine (Fashion & Textiles, Food & Nutrition, Food Studies)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdmzmRfGeNk7rm7n_3ytc8ZKNuBKUch0M8jgaw1x_1biFxaVA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -195,7 +239,11 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Design & Technology",
-    "teachers": "DHUNPUT Prithiviraj (Design & Technology, Design & Communication),ALLYMAMOD Mohammad Ziad (Design & Communication, Design & Technology),PAUPIAH Mohnish (Design & Communication, Design & Technology)",
+    "teachers": [
+      "DHUNPUT Prithiviraj (Design & Technology, Design & Communication)",
+      "ALLYMAMOD Mohammad Ziad (Design & Communication, Design & Technology)",
+      "PAUPIAH Mohnish (Design & Communication, Design & Technology)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSet737F4QYz3jrVGAhGpyzsc-wu_Q4VcgCVG7tDbrdiqSiEtg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -203,7 +251,11 @@
     "grade": "G7",
     "class": "RED",
     "subject": "Physics",
-    "teachers": "DUSSOYE Simla Devi (Physics),PANCHOORY Arvind (Physics),BISSONATH Dounita Devi (Physics)",
+    "teachers": [
+      "DUSSOYE Simla Devi (Physics)",
+      "PANCHOORY Arvind (Physics)",
+      "BISSONATH Dounita Devi (Physics)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSe20nI_1t4bbIzRCd6vpr9nQ_IueSby0dY9mO_6Rp82SdZgOQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1AOPExVRLAjIkMXNBhA0X2PO_zk46w0DO1nijC_mFLSg/edit"
   },
@@ -211,7 +263,9 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Arabic",
-    "teachers": "ABDOULA Nabiilah (Arabic)",
+    "teachers": [
+      "ABDOULA Nabiilah (Arabic)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSegy_Uw8RKXE15LCPQxNmlvaAN7evoXOc36cXDA5sMFYbUUFQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -219,7 +273,10 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Art & Design",
-    "teachers": "GAREWAN Narvesh (Art & Design),DOOKHORUN Asvind (Art & Design)",
+    "teachers": [
+      "GAREWAN Narvesh (Art & Design)",
+      "DOOKHORUN Asvind (Art & Design)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSf0mJk0v0JcyePzxio-4Jo6_jnRIp258j1Dqvmrj1E7-J1sPA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -227,7 +284,10 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Biology",
-    "teachers": "DHAWOTAL Devtee (Biology),TOTOO Rajeshwar (Biology)",
+    "teachers": [
+      "DHAWOTAL Devtee (Biology)",
+      "TOTOO Rajeshwar (Biology)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScBCO9oDwfE-8SWeYge5rrkK6MW2B3CYRI_vM8vQH3a2HH44w/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -235,7 +295,11 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Chemistry",
-    "teachers": "FAWDAR Balmik (Chemistry),THUMADOO Kishan (Chemistry),SEEBURRUN Premchand (Chemistry, Life Skills & Values)",
+    "teachers": [
+      "FAWDAR Balmik (Chemistry)",
+      "THUMADOO Kishan (Chemistry)",
+      "SEEBURRUN Premchand (Chemistry, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdpV55Df_2P4Fh-4uQiAKfYPLxtb4XqIixL50XpFaoQK3byBQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -243,7 +307,11 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "BEE",
-    "teachers": "NAWRUTTUN Shatti Bhama (BEE, Business),KITARUTH Avinash (Business, BEE),GUNESS Harshita Devi (Business, BEE)",
+    "teachers": [
+      "NAWRUTTUN Shatti Bhama (BEE, Business)",
+      "KITARUTH Avinash (Business, BEE)",
+      "GUNESS Harshita Devi (Business, BEE)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfy2xwOFHZE7ZXawgQB16xvpdSDp3TDnCWR_SJSbA9SMWRY0w/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -251,7 +319,14 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "English",
-    "teachers": "RAJCOOMAR Priscilla Kiran (English),CHOYTOO HAWOLDAR Shalini (English),SEELOCHUN Nirmala (English),RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),EDOO Nawsheen Bibi Zainab (English),RAMJHEETUN LOCKNAUTH Vidoushi (English)",
+    "teachers": [
+      "RAJCOOMAR Priscilla Kiran (English)",
+      "CHOYTOO HAWOLDAR Shalini (English)",
+      "SEELOCHUN Nirmala (English)",
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "EDOO Nawsheen Bibi Zainab (English)",
+      "RAMJHEETUN LOCKNAUTH Vidoushi (English)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdSDEFt6qBkMz5d0JJInS2DteSXMVAZzwY1_Fx2jbHfTCpzDw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -259,7 +334,14 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "French",
-    "teachers": "BAJRACHARYA Prakash (French, French Literature),RAGNUTH Manisha (French, French Literature),NARISIMLU Ursheena (French, French Literature),MOOKEN Shekinah (French, French Literature),DADA Jacque Gregory Benoit (French, French Literature),LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)",
+    "teachers": [
+      "BAJRACHARYA Prakash (French, French Literature)",
+      "RAGNUTH Manisha (French, French Literature)",
+      "NARISIMLU Ursheena (French, French Literature)",
+      "MOOKEN Shekinah (French, French Literature)",
+      "DADA Jacque Gregory Benoit (French, French Literature)",
+      "LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdiA57H2HizIJJO_kyJDgrAhZF0YJy2kvg4dLVI172qyrqpuw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -267,7 +349,9 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Kreol Morisien",
-    "teachers": "DOWLUT BOOLAKEE Bibi Zainab (Kreol Morisien)",
+    "teachers": [
+      "DOWLUT BOOLAKEE Bibi Zainab (Kreol Morisien)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdwotNexrOPjMySoYR55W7wr4gC9Bch5NsRJNWXuDRfFWENOA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -275,7 +359,10 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Hindi",
-    "teachers": "BHOLAH Chandrawtee (Hindi),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+    "teachers": [
+      "BHOLAH Chandrawtee (Hindi)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc4LuOcn4vn26htodwgKsc3hJCK2eqJoiffHbcxICRySzc5pg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -283,7 +370,12 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "ICT",
-    "teachers": "BOYJONAUTH Kevin (Computer Science, ICT),BEEFNAH Anoosuya Devi (Computer Science, ICT),RAMDANY Sudesh Kumar (Computer Science, ICT),APPIAH Melvin (Computer Science, ICT)",
+    "teachers": [
+      "BOYJONAUTH Kevin (Computer Science, ICT)",
+      "BEEFNAH Anoosuya Devi (Computer Science, ICT)",
+      "RAMDANY Sudesh Kumar (Computer Science, ICT)",
+      "APPIAH Melvin (Computer Science, ICT)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc0sMTlZTd0ts7AwGFj8MM2NZ2TShbtHmseD6tMKLRdG7Qa2g/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -291,7 +383,15 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Life Skills & Values",
-    "teachers": "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),SEEBURRUN Premchand (Chemistry, Life Skills & Values),RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts),LOWTUN Muzayyan (Urdu, Life Skills & Values),BUNDHOO Amrish (Physical Education, Life Skills & Values),LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+    "teachers": [
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "SEEBURRUN Premchand (Chemistry, Life Skills & Values)",
+      "RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+      "LOWTUN Muzayyan (Urdu, Life Skills & Values)",
+      "BUNDHOO Amrish (Physical Education, Life Skills & Values)",
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSeYQAYPLIpJuSufKg735twbrT9AV2JHTSELtzqDYv_BOIgmIA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -299,7 +399,15 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Mathematics",
-    "teachers": "GOWREESUNKUR Manisha (Mathematics, Additional Maths),DHUNPUTH Teeroshni (Mathematics, Additional Maths),RAMKISSOON Ram Sharmah (Mathematics, Additional Maths),BEEHARRY Ranjeeta (Mathematics, Additional Maths),BEEHARRY Reunurani (Mathematics, Additional Maths),POORUN Varuna Devi (Mathematics, Additional Maths),BEERACHEE Ravindranath (Mathematics, Additional Maths)",
+    "teachers": [
+      "GOWREESUNKUR Manisha (Mathematics, Additional Maths)",
+      "DHUNPUTH Teeroshni (Mathematics, Additional Maths)",
+      "RAMKISSOON Ram Sharmah (Mathematics, Additional Maths)",
+      "BEEHARRY Ranjeeta (Mathematics, Additional Maths)",
+      "BEEHARRY Reunurani (Mathematics, Additional Maths)",
+      "POORUN Varuna Devi (Mathematics, Additional Maths)",
+      "BEERACHEE Ravindranath (Mathematics, Additional Maths)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScuSjf7MRYSkbVFZgZ2XvdZ8dHaVR1kiQeVnGMdBMuKsP1Tag/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -307,23 +415,23 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Physical Education",
-    "teachers": "BHUGOWANDEEN Satchindramohun (Physical Education),OOGARAH Shravan (Physical Education),BUNDHOO Amrish (Physical Education, Life Skills & Values)",
+    "teachers": [
+      "BHUGOWANDEEN Satchindramohun (Physical Education)",
+      "OOGARAH Shravan (Physical Education)",
+      "BUNDHOO Amrish (Physical Education, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScLdnWynASfbiN8F9GaaNEF9YYCopqDfswo6cgX9gQrxEvtXg/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
   {
     "grade": "G7",
     "class": "YELLOW",
-    "subject": "Science",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "YELLOW",
     "subject": "Social & Modern Studies",
-    "teachers": "JAYNUT Ouma Devi (Sociology, Social & Modern Studies),KORIMBOCCUS Neha (Sociology, Social & Modern Studies),RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)",
+    "teachers": [
+      "JAYNUT Ouma Devi (Sociology, Social & Modern Studies)",
+      "KORIMBOCCUS Neha (Sociology, Social & Modern Studies)",
+      "RAMLOLL Sooraj (Sociology, Social & Modern Studies, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdlaZ1xQNE5iFLPmeXwN_BokzziA2KxfCkjMTu1qVm16z2lfw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -331,23 +439,26 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Tamil",
-    "teachers": "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts),JAGGANNA Varuna (Tamil, Performing Arts)",
+    "teachers": [
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+      "JAGGANNA Varuna (Tamil, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSeLGsVHir6q6NkSkxTRrJqVJDJuVclKs6XK1kYAtk1FebRrCA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
   {
     "grade": "G7",
     "class": "YELLOW",
-    "subject": "Technology Studies",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "YELLOW",
     "subject": "Performing Arts",
-    "teachers": "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts),LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts),HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts),BABOO Kumar Rajiv (Performing Arts),GOKHOOLAH Kusum Sarovar (Performing Arts),LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts),JAGGANNA Varuna (Tamil, Performing Arts)",
+    "teachers": [
+      "RAGHOOBER Seewoocoomar (English, Life Skills & Values, Performing Arts)",
+      "LOUISE PIERRE Marie Murtée Juliana (French, French Literature, Performing Arts)",
+      "HARJAN Surekha Devi (Hindi, Life Skills & Values, Performing Arts)",
+      "BABOO Kumar Rajiv (Performing Arts)",
+      "GOKHOOLAH Kusum Sarovar (Performing Arts)",
+      "LUTCHAMANEN Loleeda (Tamil, Life Skills & Values, Performing Arts)",
+      "JAGGANNA Varuna (Tamil, Performing Arts)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfP-i3WXoDgAqtB2t0c9nFFNq9G88dWv_uQN-XvsO8bv6-LHA/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -355,39 +466,21 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Urdu",
-    "teachers": "BEEBEEJAUN Mohammad Zaheed (Urdu),LOWTUN Muzayyan (Urdu, Life Skills & Values)",
+    "teachers": [
+      "BEEBEEJAUN Mohammad Zaheed (Urdu)",
+      "LOWTUN Muzayyan (Urdu, Life Skills & Values)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSf48hZJg5y5j0jXBA2CQFyUCZnV-1UMOg7cU8kpA_nz9XtNPQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
   {
     "grade": "G7",
     "class": "YELLOW",
-    "subject": "Telugu",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "YELLOW",
-    "subject": "Absences",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "YELLOW",
-    "subject": "Lateness",
-    "teachers": "",
-    "form_url": "x",
-    "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
-  },
-  {
-    "grade": "G7",
-    "class": "YELLOW",
     "subject": "Form Master Remarks",
-    "teachers": "BABOOA Lubdha Devi, GOKHOOLAH Kusum Sarovar",
+    "teachers": [
+      "BABOOA Lubdha Devi",
+      "GOKHOOLAH Kusum Sarovar"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfbetY6jH1tCthNB13zC3AsmAGEozX7uYY4mni48XZhccXJJQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -395,7 +488,10 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Food Studies",
-    "teachers": "BABOOA Lubdha Devi (Fashion & Textiles, Food & Nutrition, Food Studies),MAMEDY Geraldine (Fashion & Textiles, Food & Nutrition, Food Studies)",
+    "teachers": [
+      "BABOOA Lubdha Devi (Fashion & Textiles, Food & Nutrition, Food Studies)",
+      "MAMEDY Geraldine (Fashion & Textiles, Food & Nutrition, Food Studies)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc1FVnR8vlInKCgpfchCuBTbiIswFMX6mMFfsZ11vK-6MVRpw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -403,7 +499,11 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Design & Technology",
-    "teachers": "DHUNPUT Prithiviraj (Design & Technology, Design & Communication),ALLYMAMOD Mohammad Ziad (Design & Communication, Design & Technology),PAUPIAH Mohnish (Design & Communication, Design & Technology)",
+    "teachers": [
+      "DHUNPUT Prithiviraj (Design & Technology, Design & Communication)",
+      "ALLYMAMOD Mohammad Ziad (Design & Communication, Design & Technology)",
+      "PAUPIAH Mohnish (Design & Communication, Design & Technology)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSf3X5G9qe9FCipyaf2DxzS2JPwWo8nn1gHwzZvjzP66cgHRyQ/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   },
@@ -411,7 +511,11 @@
     "grade": "G7",
     "class": "YELLOW",
     "subject": "Physics",
-    "teachers": "DUSSOYE Simla Devi (Physics),PANCHOORY Arvind (Physics),BISSONATH Dounita Devi (Physics)",
+    "teachers": [
+      "DUSSOYE Simla Devi (Physics)",
+      "PANCHOORY Arvind (Physics)",
+      "BISSONATH Dounita Devi (Physics)"
+    ],
     "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfwMtGV59LrPxIunEenUOemPiQ2uWlM8pTJBKZ8He431MbFxw/viewform",
     "response_sheet_url": "https://docs.google.com/spreadsheets/d/1H-7TT-gPoE6Eflv-WYHxWSrssn36v9S6Erq7p5rHG7I/edit"
   }
