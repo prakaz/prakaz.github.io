@@ -208,7 +208,8 @@ padding-left:5px;
 
         function loadJsonFromWeb(url) {
             document.getElementById('link-structure').innerHTML = '<p>Loading data...</p>'; // Loading indicator
-            fetch(url)
+            const cacheBuster = new Date().getTime(); // Unique timestamp to prevent caching
+            fetch(`${url}?_=${cacheBuster}`, { cache: "no-store" }) // Explicitly disable caching
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                     return response.json();
