@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Button</title>
+    <title>Redirect Page</title>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function redirectBasedOnParam() {
+            const r = getQueryParam('r');
+            let redirectUrl = null;
+
+            switch (r) {
+                case 'brsss':
+                    redirectUrl = 'https://a.com';
+                    break;
+                case 'example':
+                    redirectUrl = 'https://example.com';
+                    break;
+                default:
+                    redirectUrl = null; // No redirection if param doesn't match
+            }
+
+            if (redirectUrl) {
+                window.location.href = redirectUrl;
+            }
+        }
+
+        window.onload = redirectBasedOnParam;
+    </script>
 </head>
 <body>
     <button onclick="parent.location.href='http://example.net';">Go to Example.net</button>
