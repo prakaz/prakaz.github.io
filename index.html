@@ -10,7 +10,12 @@
             --hover-background: #b5f1ff;
             --subject-color: #0d6efd;
             --subject-hover-color: #084298;
-            --marksheet-color: #1a73e8; /* Match primary color for link style */
+            --marksheet-color: #1a73e8;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         #grades {
@@ -20,6 +25,7 @@
             max-width: 600px;
             margin: 20px auto;
             font-family: 'Arial', sans-serif;
+            font-size: 1rem;
         }
         #grades li {
             margin: 10px 0;
@@ -56,8 +62,6 @@
             background: #fafafa;
             border-radius: 6px;
             margin: 8px 0;
-            display: flex;
-            align-items: center;
         }
         .subject-link {
             display: block;
@@ -72,24 +76,17 @@
             background: #e9ecef;
             color: var(--subject-hover-color);
         }
-        .subjects li img {
-            margin-right: -7px;
-            margin-left: 15px;
+        .subject-link img {
+            padding-right: 3px;
             vertical-align: middle;
         }
         .marksheet-link {
             color: #1b73e8;
-            text-decoration: underline;
+            text-decoration: none;
             font-weight: 500;
             font-size: 0.9em;
             padding-left: 5px;
         }
-        /*
-        .marksheet-link:hover {
-            color: #1557b0;
-            text-decoration: underline;
-        }
-        */
         .classes > li > div {
             display: flex;
             align-items: center;
@@ -100,6 +97,19 @@
             padding-right: 0px;
             padding-left: 5px;
         }
+
+        @media (min-width: 768px) {
+            #grades {
+                font-size: 1rem;
+                max-width: 800px;
+            }
+            .grade-link, .class-link {
+                padding: 10px 14px;
+            }
+            .subject-link {
+                padding: 8px 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -108,67 +118,62 @@
     <script>
         function createLinkStructure(data) {
             const groupedData = {};
-            const classMarksheets = {}; // Store marksheet URL per grade-class combination
+            const classMarksheets = {};
             data.forEach(item => {
                 const grade = item.grade;
                 const cls = item["class"];
                 const subject = item.subject;
                 const formUrl = item.form_url;
                 const responseSheetUrl = item.response_sheet_url;
-                const classKey = `${grade}-${cls}`; // Unique key per grade and class (e.g., G7-RED, G8-RED)
+                const classKey = `${grade}-${cls}`; // Unique key per grade-class combo
                 if (!groupedData[grade]) groupedData[grade] = {};
                 if (!groupedData[grade][cls]) {
                     groupedData[grade][cls] = [];
-                    classMarksheets[classKey] = responseSheetUrl; // Store response_sheet_url for this grade-class pair
+                    classMarksheets[classKey] = responseSheetUrl; // Store per grade and class
                 }
                 groupedData[grade][cls].push({ subject, formUrl });
             });
 
             let html = '<ul id="grades" role="tree">';
             for (const grade in groupedData) {
-                const gradeId = grade.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
+                const gradeId = grade.replace(/\s+/g, '-').toLowerCase();
                 html += `
                     <li role="treeitem">
                         <a class="grade-link" aria-expanded="false" aria-level="1" aria-controls="classes-${gradeId}">${grade}</a>
                         <ul class="classes" role="group" id="classes-${gradeId}">`;
                 for (const cls in groupedData[grade]) {
-                    const classDisplay = `${grade}-${cls}`; // Combine grade and class (e.g., G7-RED)
-                    const classId = classDisplay.replace(/\s+/g, '-').toLowerCase(); // Create unique ID
-                    const marksheetUrl = classMarksheets[classDisplay]; // Get the marksheet URL for this grade-class pair
+                    const classDisplay = `${grade}-${cls}`;
+                    const classId = classDisplay.replace(/\s+/g, '-').toLowerCase();
+                    const marksheetUrl = classMarksheets[classDisplay]; // Dynamic URL per grade-class
 
-                    // Sort subjects alphabetically, but keep specified subjects at the end
                     groupedData[grade][cls].sort((a, b) => {
                         const specialSubjects = ["Absences", "Lateness", "Form Master Remarks"];
                         const aIsSpecial = specialSubjects.includes(a.subject);
                         const bIsSpecial = specialSubjects.includes(b.subject);
-
-                        if (aIsSpecial && !bIsSpecial) {
-                            return 1; // a goes after b
-                        } else if (!aIsSpecial && bIsSpecial) {
-                            return -1; // a goes before b
-                        } else {
-                            return a.subject.localeCompare(b.subject); // Standard alphabetical sort
-                        }
+                        if (aIsSpecial && !bIsSpecial) return 1;
+                        else if (!aIsSpecial && bIsSpecial) return -1;
+                        else return a.subject.localeCompare(b.subject);
                     });
 
                     html += `
                         <li role="treeitem">
                             <div>
                                 <a class="class-link" aria-expanded="false" aria-level="2" aria-controls="subjects-${classId}">${classDisplay}</a>
-                                <span> </span>
-                                <img src="https://prakaz.github.io/share-sprite.png" alt="" />
-                                <a href="${marksheetUrl}" target="_blank" class="marksheet-link">Marksheet</a>
                             </div>
                             <ul class="subjects" role="group" id="subjects-${classId}">
                                 <li role="treeitem">
-                                    <img src="https://prakaz.github.io/share-sprite.png" alt="">
-                                    <a href="${marksheetUrl}" target="_blank" class="subject-link" aria-level="3">Marksheet</a>
+                                    <a href="${marksheetUrl}" target="_blank" class="subject-link" aria-level="3">
+                                        <img src="https://prakaz.github.io/share-sprite.png" alt="">
+                                        Marksheet
+                                    </a>
                                 </li>`;
                     groupedData[grade][cls].forEach(subject => {
                         html += `
                             <li role="treeitem">
-                                <img src="https://prakaz.github.io/share-sprite.png" alt="">
-                                <a href="${subject.formUrl}" target="_blank" class="subject-link" aria-level="3">${subject.subject}</a>
+                                <a href="${subject.formUrl}" target="_blank" class="subject-link" aria-level="3">
+                                    <img src="https://prakaz.github.io/share-sprite.png" alt="">
+                                    ${subject.subject}
+                                </a>
                             </li>`;
                     });
                     html += `</ul></li>`;
@@ -180,40 +185,45 @@
             const container = document.getElementById('link-structure');
             container.innerHTML = html;
 
-            // Add click event listener with accordion behavior
             container.addEventListener('click', function(event) {
                 const target = event.target;
-
-                // Only handle grade-link or class-link clicks
                 if (target.tagName === 'A' && (target.classList.contains('grade-link') || target.classList.contains('class-link'))) {
                     event.preventDefault();
-                    const sublist = target.nextElementSibling.tagName === 'UL' ? target.nextElementSibling : target.parentElement.nextElementSibling; // Adjust for div structure
+                    let sublist;
+                    if (target.classList.contains('grade-link')) {
+                        sublist = target.nextElementSibling;
+                    } else if (target.classList.contains('class-link')) {
+                        sublist = target.parentElement.nextElementSibling;
+                    }
+                    if (!sublist || sublist.tagName !== 'UL') return;
+
                     const isExpanding = sublist.style.display !== 'block';
-
-                    // Determine the level (grade or class) and collapse others at the same level
                     const parentList = target.closest('ul');
-                    const siblings = parentList.querySelectorAll('.' + target.className); // Same class (grade-link or class-link)
+                    const siblings = parentList.querySelectorAll('.' + target.className);
 
-                    // Collapse all siblings
                     siblings.forEach(sibling => {
-                        const siblingSublist = sibling.nextElementSibling.tagName === 'UL' ? sibling.nextElementSibling : sibling.parentElement.nextElementSibling;
+                        let siblingSublist;
+                        if (sibling.classList.contains('grade-link')) {
+                            siblingSublist = sibling.nextElementSibling;
+                        } else if (sibling.classList.contains('class-link')) {
+                            siblingSublist = sibling.parentElement.nextElementSibling;
+                        }
                         if (siblingSublist && sibling !== target) {
                             siblingSublist.style.display = 'none';
                             sibling.setAttribute('aria-expanded', 'false');
                         }
                     });
 
-                    // Toggle the clicked item's sublist
                     sublist.style.display = isExpanding ? 'block' : 'none';
                     target.setAttribute('aria-expanded', isExpanding.toString());
                 }
-                // Subject links and marksheet links are not affected and will open their href naturally
             });
         }
 
         function loadJsonFromWeb(url) {
-            document.getElementById('link-structure').innerHTML = '<p>Loading data...</p>'; // Loading indicator
-            fetch(url)
+            document.getElementById('link-structure').innerHTML = '<p>Loading data...</p>';
+            const cacheBuster = new Date().getTime();
+            fetch(`${url}?_=${cacheBuster}`, { cache: "no-store" })
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                     return response.json();
@@ -226,7 +236,6 @@
                 });
         }
 
-        // Load JSON from your GitHub URL
         loadJsonFromWeb('https://prakaz.github.io/forms.json');
     </script>
 </body>
